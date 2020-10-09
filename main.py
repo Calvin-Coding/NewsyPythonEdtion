@@ -48,6 +48,7 @@ def newsDatabase():
             print("\\")
             time.sleep(0.5)
             print("FILE NOT FOUND")
+            newsDatabase()
     elif newsInput == "Exit":
         print("Who Stole Jonh Johnson's Car? ")
         answerWho = raw_input("Enter Name Here: ")
