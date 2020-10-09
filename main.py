@@ -5,7 +5,7 @@ print("Welcome to Newsy (C) Calvin-Coding https://github.com/Calvin-Coding/Newsy
 name = raw_input("What is your name? ")
 print("Welcome " + name)
 print("LEVEL ONE")
-print("Dear Editor, \n There has been disaster in our neighborhood Jonh Johnsons car has been stolen on 2/16/2020\n The one clue I have is that Jerry Buffalo, find him! \n Your Friend,\nGrant Bennet.")
+print("Dear Editor, \n There has been disaster in our neighborhood Jonh Johnsons car has been stolen on 2/16/2020\n The one clue I have is the name Jerry Buffalo, find out who did this! \n Your Friend,\nGrant Bennet.")
 print("Find Who Stole Jonh Johnsons Car!")
 
 
@@ -39,12 +39,22 @@ def newsDatabase():
                 i += 1
             
             newsDatabase()
+        else:
+            print("SEARCHING")
+            print("/")
+            time.sleep(0.5)
+            print("-")
+            time.sleep(0.5)
+            print("\\")
+            time.sleep(0.5)
+            print("FILE NOT FOUND")
     elif newsInput == "Exit":
         print("Who Stole Jonh Johnson's Car? ")
         answerWho = raw_input("Enter Name Here: ")
         if answerWho == "Jerry Deer":
             print("CONGRATS!!! YOU WON NEWSY PYTHON EDTION!")
-
+    else:
+        newsDatabase()
 newsDataOpen = raw_input("Open News DataBase y/n")
 if newsDataOpen == "y":
     print("type --help for help.")
